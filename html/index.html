@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="card-outer">
+                <div class="card" onclick="flip(event)">
+                    <div class="card-inner">
+
+                        <div class="card-front">
+                            <div class="circle"></div>
+                            <div class="triangle">
+                                <svg height="110" width="130">
+                                <polygon points="60,20 100,100 20,100" style="fill:transparent;stroke:rgba(0, 0, 0, 0.603);stroke-width:12" />
+                                </svg>
+                            </div>
+                            <div class="square"></div>
+                        </div>
+
+                        <div class="card-back">
+                            <p style="float: left;" class="house-img"><img src="house.png"></p>
+                            <p class="number-text">8650 4006</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
